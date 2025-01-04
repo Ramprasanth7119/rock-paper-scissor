@@ -1,0 +1,80 @@
+/* Base container for the whole section */
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 20px; /* Black background */
+  flex-wrap: wrap; /* Ensure content wraps on mobile */
+}
+
+/* Text container holding the typed text and the quote */
+.text-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Glassmorphism effect on the typed text */
+.typing-text {
+  font-family: 'Courier New', Courier, monospace;
+  color: #e0e0e0; /* Light text color */
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  padding: 10px 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(8px); /* Glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Soft border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  margin-bottom: 20px;
+}
+
+/* Quote styling */
+.quote {
+  font-size: 1.2em;
+  color: #ddd; /* Light grey color for the quote */
+  margin-top: 10px;
+  text-align: left;
+  max-width: 600px;
+}
+
+/* Image container, centering the image */
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+}
+
+/* Image styling */
+.painting-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 80vh;
+}
+
+/* Media Query for mobile responsiveness */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-container {
+    align-items: center;
+    text-align: center;
+  }
+
+  .image-container {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .painting-image {
+    max-width: 90%;
+    max-height: 60vh;
+  }
+}
