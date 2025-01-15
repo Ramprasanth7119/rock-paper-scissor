@@ -1,6 +1,7 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import Img from '../../assets/home.png'; // Import the painting image
+import ram from '../../assets/ram.png';
 import './Home.css';
 
 const Home = () => {
@@ -10,11 +11,11 @@ const Home = () => {
         <TypeAnimation
           sequence={[
             'Software Developer',
-            1000, // wait 1s before replacing "Mice" with "Hamsters"
+            1000,
           ]}
           wrapper="span"
           speed={50}
-          style={{ fontSize: '2em', display: 'inline-block', marginBottom: '20px' }}
+          style={{ fontSize: '4em', display: 'inline-block', marginBottom: '20px', color:'white'}}
         />
         <p className="quote">
           Passionate Software Developer dedicated to turning innovative ideas into impactful, real-world applications that drive change and inspire growth.
@@ -22,7 +23,10 @@ const Home = () => {
       </div>
       <div className="image-container">
         <img src={Img} alt="Painting" className="painting-image" />
+        
       </div>
+
+      
     </div>
   );
 };

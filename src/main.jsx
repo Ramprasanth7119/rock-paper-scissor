@@ -9,7 +9,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
-      {/* <StarCanvas /> */}
+      <StarCanvas />
     </BrowserRouter>
   </React.StrictMode>
 );

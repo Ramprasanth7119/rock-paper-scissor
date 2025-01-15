@@ -9,6 +9,8 @@ import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
 import Blog from "./components/Blog/Blog";
+import Cursor from './components/cursor/Cursor';
+import Contact from './components/contact/Contact'
 
 import { Routes, Route } from "react-router-dom";
 import Img from '../src/assets/project-image.jpeg';
@@ -47,18 +49,29 @@ function App() {
     
   ];
 
+  // return (
+  //   <>
+  //     <Navbar toggle={toggle} />
+  //     <Sidebar isopen={isopen} toggle={toggle} />
+  //     <Routes>
+  //       <Route path="/" element={<Home />}/>
+  //       <Route path="/about" element={<About />} />
+  //       <Route path="/skills" element={<Skills/>}/>
+  //       <Route path="/projects" element={<Projects  projects={projects}/>}/>
+  //       <Route path="/blog" element={<Blog/>}/>
+  //     </Routes>
+  //   </>
+  // );
   return (
     <>
-
+      <Cursor/>
       <Navbar toggle={toggle} />
       <Sidebar isopen={isopen} toggle={toggle} />
-      <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/about" element={<About />} />
-        <Route path="/skills" element={<Skills/>}/>
-        <Route path="/projects" element={<Projects  projects={projects}/>}/>
-        <Route path="/blog" element={<Blog/>}/>
-      </Routes>
+      <Home/>
+      <About/>
+      <Projects projects={projects}/>
+      <Skills/>
+      <Contact/>
     </>
   );
 }
