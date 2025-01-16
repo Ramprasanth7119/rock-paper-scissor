@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import ramImage from "../../assets/ram.png"; // Replace with the path to your PNG image
-import shl1 from '../../assets/school-1.png';
+import shl1 from '../../assets/school-1.jpg';
 import shl2 from '../../assets/school-2.png';
 import clg from '../../assets/college.png';
 

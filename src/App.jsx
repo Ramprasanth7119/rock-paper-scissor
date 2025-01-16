@@ -9,8 +9,6 @@ import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
 import Blog from "./components/Blog/Blog";
-import Cursor from './components/cursor/Cursor';
-import Contact from './components/contact/Contact'
 
 import { Routes, Route } from "react-router-dom";
 import Img from '../src/assets/project-image.jpeg';
@@ -64,14 +62,12 @@ function App() {
   // );
   return (
     <>
-      <Cursor/>
       <Navbar toggle={toggle} />
       <Sidebar isopen={isopen} toggle={toggle} />
       <Home/>
       <About/>
       <Projects projects={projects}/>
       <Skills/>
-      <Contact/>
     </>
   );
 }
